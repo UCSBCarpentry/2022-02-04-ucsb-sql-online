@@ -399,18 +399,36 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+## Software  
+ 
+For this course you will need the UNIX shell and [SQLite3](http://www.sqlite.org/) *or*
+[DB Browser for SQLite](https://sqlitebrowser.org/). In addition, you will need an up-to-date web browser.
+
+If you are running **macOS** you should already have SQLite installed. You can run `sqlite3 --version`
+in a terminal to confirm that it is available. You can also download DB Browser for SQLite from
+[their website](https://sqlitebrowser.org/dl/.)
+
+If you are running **Linux**, you may already have SQLite3 installed, please use the command 
+`which sqlite3` to see the path of the program, otherwise you should be able to get it 
+from your package manager (on Debian/Ubuntu, you can use the command `apt install sqlite3`).
+
+If you are running **Windows**, run installers as administrator.
+Additionally, make sure you select the right installer version for your system.
+We recommend that you use [git for Windows](https://gitforwindows.org/).
+This is described in the [UNIX Shell lesson](http://swcarpentry.github.io/shell-novice/setup.html).
+If the installer asks to add the path to the environment variables, check yes, otherwise you have to manually add the path of the executable to the `PATH` environmental variables.
+This path informs the system where to find the executable program.
+
+If installing SQLite3 using Anaconda, refer to the [anaconda sqlite docs](https://anaconda.org/anaconda/sqlite).
+
+After the installation and the setting of the paths, close the terminal and reopen a new terminal.
+This enables paths and configurations to be loaded.
+
+# Files
+Please download the database we'll be using: 
+- [survey.db]({{ page.root }}/files/survey.db)
 </p>
+
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
@@ -429,21 +447,4 @@ to include the relevant installation instrucctions.
 {% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
 {% endif %}
