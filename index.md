@@ -441,7 +441,7 @@ This path informs the system where to find the executable program.
 </p>
 
 <p>
-If installing SQLite3 using Anaconda, refer to the [anaconda sqlite docs](https://anaconda.org/anaconda/sqlite).  
+  If installing SQLite3 using Anaconda, refer to the <a href="https://anaconda.org/anaconda/sqlite">anaconda sqlite docs</a>.  
 </p>
 
 <p>
