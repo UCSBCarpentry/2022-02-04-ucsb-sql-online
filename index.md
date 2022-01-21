@@ -398,7 +398,61 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
-{% include setup.html %}
+<p>
+  To participate in a
+  {% if site.carpentry == "swc" %}
+  Software Carpentry
+  {% elsif site.carpentry == "dc" %}
+  Data Carpentry
+  {% elsif site.carpentry == "lc" %}
+  Library Carpentry
+  {% endif %}
+  workshop,
+  you will need access to software as described below.
+  In addition, you will need an up-to-date web browser.
+</p>
+
+<h3>Software</h3>
+ 
+<p>
+  For this course you will need the UNIX shell and <a href= "http://www.sqlite.org/">SQLite3</a>, or
+  <a href= "https://sqlitebrowser.org/">DB Browser for SQLite</a>.
+</p>
+
+<p>
+If you are running <strong>macOS</strong> you should already have SQLite installed. You can run `sqlite3 --version`
+in a terminal to confirm that it is available. You can also download DB Browser for SQLite from
+  <a href= "https://sqlitebrowser.org/dl/">their website.</a>  
+</p>
+
+<p>
+  If you are running <strong>Linux</strong>, you may already have SQLite3 installed, please use the command 
+`which sqlite3` to see the path of the program, otherwise you should be able to get it 
+from your package manager (on Debian/Ubuntu, you can use the command `apt install sqlite3`).  
+</p>
+  
+<p>
+  If you are running <strong>Windows</strong>, run installers as administrator.
+Additionally, make sure you select the right installer version for your system.
+  We recommend that you use <a href= "https://gitforwindows.org/">git for Windows</a>.
+  This is described in the <a href= "http://swcarpentry.github.io/shell-novice/setup.html">UNIX Shell lesson</a>.
+If the installer asks to add the path to the environment variables, check yes, otherwise you have to manually add the path of the executable to the `PATH` environmental variables.
+This path informs the system where to find the executable program.  
+</p>
+
+<p>
+If installing SQLite3 using Anaconda, refer to the [anaconda sqlite docs](https://anaconda.org/anaconda/sqlite).  
+</p>
+
+<p>
+After the installation and the setting of the paths, close the terminal and reopen a new terminal.
+This enables paths and configurations to be loaded.  
+</p>
+
+<h3>Files</h3>
+
+Please download the database we'll be using: 
+- <a href= "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online/blob/gh-pages/data/survey.db?raw=true">survey.db</a>
 
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
