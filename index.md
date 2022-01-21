@@ -398,7 +398,7 @@ please preview your site before committing, and make sure to run
 
 <h2 id="setup">Setup</h2>
 
-{% include includes/setup.html %}
+{% include setup.html %}
 
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
