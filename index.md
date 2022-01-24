@@ -449,8 +449,8 @@ This enables paths and configurations to be loaded.
 
 <h3>Files and Libraries</h3>
 
-Please download the database we'll be using: 
-- <a href= "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online/blob/gh-pages/data/survey.db?raw=true">survey.db</a>
+Please download the database we'll be using:
+- <a href= "https://github.com/UCSBCarpentry/2022-02-04-ucsb-sql-online/blob/gh-pages/data/survey.db?raw=true">survey.db</a>. Be sure to unzip if needed, and put the file in a location that easily accessible (e.g. desktop).
 
 If you wish to access a database from R during the Workshop, ensure you have a recent version of RStudio: In RStudio, go to the <strong>Help</strong> tab and select <strong>Check for Updates</strong>. You also need to install the RSQLite Package: In RStudio, go to the <strong>Tools</strong> tab and select <strong>Install Packages...</strong>.  
 
