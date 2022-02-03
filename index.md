@@ -360,13 +360,8 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
+
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
 Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
@@ -413,7 +408,7 @@ please preview your site before committing, and make sure to run
 </p>
 
 <h3>Software</h3>
- 
+
 <p>
   For this course you will need the UNIX shell and <a href= "http://www.sqlite.org/">SQLite3</a>.
 </p>
@@ -424,11 +419,11 @@ in a terminal to confirm that it is available.
 </p>
 
 <p>
-If you are running <strong>Linux</strong>, you may already have SQLite3 installed, please use the command 
-`which sqlite3` to see the path of the program, otherwise you should be able to get it 
+If you are running <strong>Linux</strong>, you may already have SQLite3 installed, please use the command
+`which sqlite3` to see the path of the program, otherwise you should be able to get it
 from your package manager (on Debian/Ubuntu, you can use the command `apt install sqlite3`).  
 </p>
-  
+
 <p>
 If you are running <strong>Windows</strong>, run installers as administrator. You may find the latest release of SQLite <a href= "http://www.sqlite.org/">on their website</a>.
 Additionally, make sure you select the right installer version for your system.
