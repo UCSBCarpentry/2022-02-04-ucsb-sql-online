@@ -425,3 +425,15 @@ to include the relevant installation instrucctions.
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
+
+{% if site.carpentry == "swc" %}
+{% include swc/setup.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/setup.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/setup.html %}
+{% elsif site.carpentry == "incubator" %}
+Please check the "Setup" page of
+[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
+to obtain the software and data you will need to follow the lesson.
+{% endif %}
